@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button,
+input {
+  font-size: 18px;
+  padding: 16px 22px;
+  border-radius: 16px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+button:hover {
+  background-color: #ddd;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.App {
+  margin: 50px;
+  height: 500px;
+  border-radius: 15px;
+  width: 500px;
+  padding: 32px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.add__todo {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.todos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.all__todos {
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 380px;
+}
+.todo__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+}
+.todo__item .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.todo__item button {
+  padding: 8px;
+  font-size: 12px;
+}
+
+.todo__item .complete,
+.todo__item .incomplete {
+  color: rgb(10, 121, 121);
+  letter-spacing: 1px;
+  font-size: 12px;
+}
